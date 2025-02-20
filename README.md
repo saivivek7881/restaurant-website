@@ -42,7 +42,6 @@ This is a **Restaurant Website** built using **HTML, CSS, and Bootstrap**. It pr
 #### Registration Page
 <img src="./Registration.png" width="600" alt="Registration Page Screenshot">
 
-
 ---
 
 ### 🛠️ Tech Stack
@@ -61,7 +60,7 @@ To run this project locally, follow these steps:
 ```bash
 git clone https://github.com/saivivek7881/restaurant-website.git
 cd restaurant-website
-open index.html
+open home.html
 ```
 
 ---
