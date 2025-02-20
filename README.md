@@ -22,25 +22,26 @@ This is a **Restaurant Website** built using **HTML, CSS, and Bootstrap**. It pr
 
 ### 🖼️ Screenshots
 #### Home Page
-<img src="home.png" width="600" alt="Home Page Screenshot">
+<img src="./Home.png" width="600" alt="Home Page Screenshot">
 
 #### Menu Page
-<img src="menu.png" width="600" alt="Menu Page Screenshot">
+<img src="./Menu.png" width="600" alt="Menu Page Screenshot">
 
 #### About Page
-<img src="about.png" width="600" alt="About Page Screenshot">
+<img src="./About.png" width="600" alt="About Page Screenshot">
 
 #### Location Page
-<img src="location.png" width="600" alt="Location Page Screenshot">
+<img src="./Location.png" width="600" alt="Location Page Screenshot">
 
 #### Contact Page
-<img src="contact.png" width="600" alt="Contact Page Screenshot">
+<img src="./Contact.png" width="600" alt="Contact Page Screenshot">
 
 #### Login Page
-<img src="login.png" width="600" alt="Login Page Screenshot">
+<img src="./Login.png" width="600" alt="Login Page Screenshot">
 
 #### Registration Page
-<img src="registration.png" width="600" alt="Registration Page Screenshot">
+<img src="./Registration.png" width="600" alt="Registration Page Screenshot">
+
 
 ---
 
