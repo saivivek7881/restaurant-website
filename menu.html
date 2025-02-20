@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - The Chill Spot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Full-Screen Fixed Background */
+        body {
+            background: url("backgound2.jpg") no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Prevents full-page scrolling */
+        }
+
+        /* Semi-Transparent Overlay for Readability */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.5); /* Light blur effect */
+            z-index: -1;
+        }
+
+        /* Scrollable Menu Container */
+        .menu-wrapper {
+            width: 90%;
+            max-width: 800px;
+            height: 80vh; /* Fixed height for scrolling */
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            overflow-y: auto; /* Enables vertical scrolling */
+            scroll-behavior: smooth; /* Smooth scrolling */
+            text-align: center;
+        }
+
+        /* Hide Scrollbar */
+        .menu-wrapper::-webkit-scrollbar {
+            display: none;
+        }
+
+        .menu-wrapper {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .menu-item img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .menu-info {
+            text-align: left;
+            flex-grow: 1;
+        }
+
+        .menu-info h3 {
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .menu-info p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #ff6600;
+            margin-top: 5px;
+        }
+
+        .rating {
+            color: #f4b400;
+            font-size: 16px;
+        }
+
+        .bestseller {
+            background: #ff6600;
+            color: white;
+            padding: 3px 8px;
+            font-size: 12px;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .menu-wrapper {
+                width: 95%;
+                height: 85vh; /* Adjust height for smaller screens */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="menu-wrapper">
+        <h1>Our Menu</h1>
+
+        <div class="menu-item">
+            <img src="biryani.jpg" alt="Biryani Rice">
+            <div class="menu-info">
+                <h3>Biryani Rice <span class="rating">&#9733;&#9733;&#9733;&#9733;&#189;</span></h3>
+                <p>Rice is cooked with spices.</p>
+                <p class="price">₹159.72</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="familypack.jpg" alt="Chicken Biryani">
+            <div class="menu-info">
+                <h3>Chicken Biryani <span class="bestseller">Bestseller</span> <span class="rating">&#9733;&#9733;&#9733;&#9733;&#189;</span></h3>
+                <p>Signature Chicken Biryani with marinated and succulent pieces of chicken.</p>
+                <p class="price">₹332.75</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="familypack.jpg" alt="Chicken Biryani Jumbo Pack">
+            <div class="menu-info">
+                <h3>Chicken Biryani Jumbo Pack <span class="rating">&#9733;&#9733;&#9733;&#9733;</span></h3>
+                <p>Large pack of Chicken Biryani with extra spices and flavor.</p>
+                <p class="price">₹1046.17</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="fry.jpg" alt="Paneer Tikka">
+            <div class="menu-info">
+                <h3>Paneer Tikka <span class="rating">&#9733;&#9733;&#9733;&#9733;</span></h3>
+                <p>Grilled paneer cubes with spicy marination.</p>
+                <p class="price">₹299.99</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="biryani.jpg" alt="Butter Chicken">
+            <div class="menu-info">
+                <h3>Butter Chicken <span class="rating">&#9733;&#9733;&#9733;&#9733;&#189;</span></h3>
+                <p>Creamy and rich butter chicken with a blend of spices.</p>
+                <p class="price">₹450.00</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="familypack.jpg" alt="Grilled Chicken">
+            <div class="menu-info">
+                <h3>Grilled Chicken <span class="rating">&#9733;&#9733;&#9733;&#9733;&#189;</span></h3>
+                <p>Creamy and rich grilled chicken with a blend of spices.</p>
+                <p class="price">₹440.00</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="fish.jpg" alt="Tandoori Roti & Rice">
+            <div class="menu-info">
+                <h3>Tandoori Roti & Rice <span class="rating">&#9733;&#9733;&#9733;&#9733;&#189;</span></h3>
+                <p>Soft and crispy whole wheat roti with grilled chicken.</p>
+                <p class="price">₹470.00</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="fry.jpg" alt="Mutton Family Pack">
+            <div class="menu-info">
+                <h3>Mutton Family Pack <span class="rating">&#9733;&#9733;&#9733;&#9733;&#189;</span></h3>
+                <p>Mutton Biryani.</p>
+                <p class="price">₹499.00</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="fish.jpg" alt="Fish Biryani Double Masala">
+            <div class="menu-info">
+                <h3>Fish Biryani Double Masala <span class="rating">&#9733;&#9733;&#9733;&#9733;</span></h3>
+                <p>Soft and crispy whole masala fish biryani.</p>
+                <p class="price">₹400.00</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

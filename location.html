@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location - The Chill Spot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background-image: url('background1.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-color: rgba(255, 255, 255, 0.7);
+            text-align: center;
+            padding: 50px;
+            background-attachment: fixed;
+            overflow:hidden;
+            background-attachment: scroll;
+        }
+        
+        .location-container {
+            max-width: 500px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            height:400px;
+        }
+        
+        .map-container {
+            margin-top: 20px;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 260px;
+            border: none;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+        body {
+        font-size: 14px; /* Smaller font for small screens */
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="location-container">
+        <h1>Our Location</h1>
+        <p>Visit us at our prime location in Hyderabad, Hitech City near Metro.</p>
+        
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.2436655989283!2d78.37304047518594!3d17.44829380170142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93f37f948bbd%3A0xb4b7d43f8c91b6ae!2sHITEC%20City%20Metro%20Station!5e0!3m2!1sen!2sin!4v1708359012345!5m2!1sen!2sin" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>

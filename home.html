@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Chill Spot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+    background-image: url('background1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    background-attachment: fixed; /* Ensures the background does not move */
+    overflow: hidden; /* Optional: Prevents scrolling if not needed */
+}
+
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .brand {
+            font-size: 22px;
+            font-weight: bold;
+            padding-left: 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            padding: 10px 15px;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links a:hover {
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .auth-buttons a {
+            text-decoration: none;
+            background: white;
+            color: black;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .auth-buttons a:hover {
+            background: black;
+            color: white;
+        }
+        
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end; 
+            justify-content: center;
+            height: 100vh;
+            text-align: right;
+            padding-right: 170px; 
+        }
+
+        .hero-section h4 {
+            font-size: 22px;
+        }
+
+        .hero-section h1 {
+            font-size: 50px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .hero-section h6 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .menu-btn {
+            display: inline-block;
+            text-decoration: none;
+            background-color: white;
+            color: black;
+            font-size: 18px;
+            padding: 12px 40px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .menu-btn:hover {
+            background-color: black;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+                padding: 15px;
+            }
+            
+            .brand {
+                padding-left: 0;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                margin-top: 10px;
+            }
+
+            .auth-buttons {
+                margin-top: 10px;
+            }
+
+            .hero-section {
+                padding-right: 20px;
+                text-align: center;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <h1 class="brand">THE CHILL SPOT</h1>
+        <ul class="nav-links">
+            <li><a href="home.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="menu.html"><i class="fa-solid fa-utensils"></i> Menu</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
+            <li><a href="location.html"><i class="fa-solid fa-location-dot"></i> Location</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="login.html">Login</a>
+            <a href="registration.html">Register</a>
+        </div>
+    </header>
+    
+    <section class="hero-section">
+        <h4>Are you hungry!?</h4>
+        <h1>DON'T WAIT!!</h1>
+        <h6>Start ordering food now</h6>
+        <a href="menu.html" class="menu-btn">Check Menu</a>
+    </section>
+</body>
+</html>

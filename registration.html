@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+       /* Ensure background is fixed */
+/* Fixed background */
+/* Centered Full-Screen Background */
+body {
+    background: url("background1.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden; /* Prevents whole page scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Light Overlay */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* Light blur effect */
+    z-index: -1;
+}
+
+/* Form Wrapper (Fixed Height) */
+.form-wrapper {
+    width: 400px;
+    max-width: 90%;
+    height: 70vh; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents scrollbar */
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+/* Form Content (Smooth Scrolling) */
+.container {
+    width: 100%;
+    max-height: 100%;
+    overflow-y: auto; /* Enables scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    padding-right: 10px; /* Prevents cut-off content */
+}
+
+/* Hide Scrollbar for all browsers */
+.container::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Chrome, Safari */
+}
+
+.container {
+    -ms-overflow-style: none;  /* Hides scrollbar in IE & Edge */
+    scrollbar-width: none;  /* Hides scrollbar in Firefox */
+}
+
+/* Form Styling */
+h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: green;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkgreen;
+}
+
+.login-link {
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .form-wrapper {
+        width: 90%;
+        height: 80vh; /* Adjust height for smaller screens */
+    }
+}
+</style>
+</head>
+<body>
+
+    <div class="form-wrapper">
+        <div class="container">
+            <h2>REGISTRATION FORM</h2>
+            <form>
+                <div class="form-group">
+                    <label>Full Name:</label>
+                    <input type="text" placeholder="Enter full name">
+                </div>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label>Phone Number:</label>
+                    <input type="text" placeholder="Enter phone number">
+                </div>
+                <div class="form-group">
+                    <label>Password:</label>
+                    <input type="password" placeholder="Enter password">
+                </div>
+                <div class="form-group">
+                    <label>Confirm Password:</label>
+                    <input type="password" placeholder="Confirm password">
+                </div>
+                <button type="submit">Register</button>
+                <a href="login.html" class="login-link">Already have an account? Login</a>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+
+</html>

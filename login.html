@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Background with Uniform Light Overlay */
+        body {
+            background: url("backgound2.jpg") no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            margin: 0;
+            position: relative;
+            background-attachment: fixed; /* Ensures the background does not move */
+            overflow: hidden; /* Optional: Prevents scrolling if not needed */
+
+        }
+
+        /* Light Overlay */
+        /* Light Overlay */
+/* Light Overlay */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7); /* Increase opacity for a lighter effect */
+    z-index: -1;
+}
+
+
+        /* Centering Form */
+        .container {
+            width: 350px;
+            max-width: 90%;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .form-group {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: green;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: darkgreen;
+        }
+
+        .register-link {
+            margin-top: 15px;
+            display: block;
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Smaller font for small screens */
+  }
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>LOGIN</h2>
+        <form>
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label>Password:</label>
+                <input type="password" placeholder="Enter password">
+            </div>
+            <button type="submit">Login</button>
+            <a href="registration.html" class="register-link">Don't have an account? Register</a>
+        </form>
+    </div>
+
+</body>
+</html>
